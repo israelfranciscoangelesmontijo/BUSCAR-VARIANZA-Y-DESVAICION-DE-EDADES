@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+int main (void)
+{
+    float arr [5] = {20,88,15,4,14};
+    int  i,VARIANZAS,edades,SUMA;
+    float MEDIA;
+    float VARIANZA;
+    float DESVIACION;
+    edades=0;
+    VARIANZA = 0;
+    for (i = 0; i <5; i ++){
+    
+    SUMA = SUMA + arr [i];
+    MEDIA = SUMA/ 5.00;
+    VARIANZA=pow((arr[i]- MEDIA),2);
+    VARIANZAS=VARIANZA/5.00;
+    DESVIACION=sqrt(VARIANZAS);
+    }
+    printf ("EL VALOR DE LA MEDIA ES =% .2f\n", MEDIA);
+    printf("EL VALOR DE LA VARIANZA ES =% .2f\n",VARIANZAS);
+    printf("EL VALOR DE LA DESVIACION ES =% .2f\n",DESVIACION);
+return 0;
+}
